@@ -1,0 +1,128 @@
+body {
+    background: url('../images/light-big.JPG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200vh;
+}
+.dark-mode #about {
+    background-color: #222222;
+}
+.dark-mode #contact {
+    background-color: #3A4650;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+    grid-template-rows: calc(100vw / 1.5) 200px 200px 200px;
+}
+.name {
+    font-family: 'Figtree', sans-serif;
+    font-size: 40pt;
+    font-weight: normal;
+
+    position: absolute;
+    right: calc(50vw - 200px);
+    top: calc(50vh - 50px);
+    /* background-color: brown; */
+}
+#about {
+    width: 100vw;
+    grid-column: 1 / 4 ; 
+    grid-row: 2 / 3;
+    background-color: rgb(167, 184, 142);
+}
+.bio {
+    margin: 0 auto;
+    width: 60vw;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#contact {
+    width: 100vw;
+    grid-column: 1 / 4 ; 
+    grid-row: 4 / 5;
+    background-color: #E8DEDE;
+
+}
+
+.info {
+    margin: 0 auto;
+    width: 300px;
+    line-height: 35px;
+    /* background-color: crimson; */
+}
+
+/* tussendoor */
+@media all and (max-width: 1150px) {
+    .name {
+        top: calc(50vw / 1.5 - 50px);
+    }
+}
+@media all and (max-width: 700px)  {
+    .name {
+        font-size: 20pt;
+        right: 10vw;
+        top: 30px;
+    }
+    p {
+        margin-top: 1em;
+        font-size: 12pt;
+        text-align: right;
+    }
+    #about {
+        text-align: right;
+    }
+    #contact {
+        text-align: right;
+    }
+    .bio {
+        margin: 0 5vw 0 35vw;
+        width: 60vw;
+    }
+}
+
+/* telefoon */
+
+@media all and (max-width: 820px)   {
+body {
+    background: url('../images/light-small.JPG');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#about {
+    background-color: rgb(218, 211, 126);
+    /* background-color: rgb(112, 119, 53); */
+}
+h1 {
+    font-size: 25pt;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+    grid-template-rows: calc(100vw * 1.5) 200px 200px 200px;
+}
+.dark-mode {
+    background-image: url('../images/dark-small.JPG');
+    /* background-color: rgb(39, 41, 50); */
+    background-color: black;
+}
+.dark-mode #about {
+    background-color: #25080B;
+}
+.dark-mode #contact {
+    background-color: #262b3e;
+    background-color: #21254F;
+    background-color: #242847;
+}
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;1,400&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Mulish:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Roboto+Slab:wght@300;400;500&family=Work+Sans:wght@300;400;500&family=Ysabeau:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style-video.css">
+</head>
+
+<body>
+
+    <ul class="nav" >
+        
+        <li id="toggle">
+            <button onclick="myFunction(),myFunction2()">
+                <div class="figure"></div>
+            </button>
+        </li>
+        <li><a href= "index.html"> Home</a></li>
+        <li><a href= "work.html"> Work </a>
+            <ul  class="sub-nav">
+                <li> <a href="videos.html">Video's</a></li>
+                <li><a target="_blank" href="https://www.pieternellemaris.com/"> Archief</a></li>
+            </ul>
+       </li>
+        <li><a href="index.html#about"> About</a></li>
+        <li><a href="index.html#contact"> Contact</a></li>
+    </ul>
+
+    <div class="name">Pieternelle Maris</div>
+    
+<div class="container">
+    <div class="player" >
+        <div class="main-video-container">
+        <video source src="https://player.vimeo.com/progressive_redirect/playback/837907002/rendition/720p/file.mp4?loc=external&signature=384d4172c2f8f8c1a463c425fb42b3c488b709e2acb2ecf69805ea5eeeb7ae5a" class="main-video" type="video/mp4" width="100%" >
+        </video>
+    </div>
+        <div class="controls">
+            <button class=" fwd fwd-position" data-icon="F" aria-label="fast forward"> ⏭</button>
+            <button class="btn play-position">
+                <div class="play" data-icon="P" aria-label="play pause toggle"></div>
+            </button>
+            <div class="timer">
+                <div></div>
+                <span aria-label="timer">00:00</span>
+                <span class="total">/ 00:00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-list-container" id="playlist">
+        <button data-src="https://player.vimeo.com/progressive_redirect/playback/837907002/rendition/720p/file.mp4?loc=external&signature=384d4172c2f8f8c1a463c425fb42b3c488b709e2acb2ecf69805ea5eeeb7ae5a" class="list active" id="gaming" class="list-video">
+            <h2 class="list-title">Gaming</h2>
+        </button>
+
+        <button data-src="https://player.vimeo.com/progressive_redirect/playback/837906030/rendition/540p/file.mp4?loc=external&signature=f3836bd52be14915f53fb527dba61e335ceef6de97e748265504b7fe3d756abe" class="list" id="my-celestrial-body" class="list-video"> 
+            <h2 class="list-title">My celestial body</h2>
+        </button>
+
+        <button data-src="https://player.vimeo.com/progressive_redirect/playback/837907665/rendition/720p/file.mp4?loc=external&signature=8d756eeac58d2c4dc946f5a93cd01ef9eb2d82323edc6bf2f4b9881fc8cb619a" class="list" id="min-video" class="list-video"> 
+            <h2 class="list-title">1 min video</h2>
+        </button>
+
+        <button data-src="" class="list" id="onwaar" class="list-video"> 
+            <h2 class="list-title">Deze zin is onwaar</h2>
+        </button>    
+        
+        <button data-src="" class="list" id="i-am-looking"class="list-video"> 
+            <h2 class="list-title">I am looking</h2>
+        </button>    
+        
+        <button data-src="" class="list" id="planeten" class="list-video" > 
+            <h2 class="list-title">planeten</h2>
+        </button>
+
+        <button data-src="" class="list" id="natuur-en-stad"class="list-video"> 
+            <h2 class="list-title">Natuur en stad</h2>
+        </button>
+    
+    </div>
+
+</div>
+    <script src="js/video.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
