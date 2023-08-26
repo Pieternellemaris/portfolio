@@ -25,7 +25,7 @@ body {
 }
 
 .dark-mode {
-    background-image: url('../images/background.JPG');
+    background-image: url('../images/dark-big.jpg');
     background-color: #272932;
     color: white;
 }

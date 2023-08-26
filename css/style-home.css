@@ -1,5 +1,5 @@
 body {
-    background: url('../images/light-big.JPG');
+    background: url('../images/light-big.jpg');
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -71,7 +71,7 @@ body {
 /* telefoon */
 @media all and (max-width: 820px) {
     body {
-        background: url('../images/light-small.JPG');
+        background: url('../images/light-small.jpg');
         background-size: contain;
         background-repeat: no-repeat;
 
@@ -86,7 +86,7 @@ body {
     }
 
     .dark-mode {
-        background-image: url('../images/dark-small.JPG');
+        background-image: url('../images/dark-small.jpg');
         background-color: black;
     }
 
