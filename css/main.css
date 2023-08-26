@@ -5,40 +5,51 @@ a{
     text-decoration:none;
 }
 /* je eigen styling start hier 
-font-family: 'Figtree', sans-serif; (name) h2: video titles, 
-font-family: 'Ysabeau', sans-serif; p 
-font-family: 'Work Sans', sans-serif; h3 nav 2, work titles
-font-family: 'Roboto Slab', serif; h1 
-font-family: 'Josefin Slab', serif; h4 work hover,
+font-family: 'Figtree', sans-serif; (name) h2: video titles; bio en info
+font-family: 'Ysabeau', sans-serif; p: ondertitel name,
+font-family: 'Work Sans', sans-serif; h3: work titles, nav
+font-family: 'Roboto Slab', serif; h1: about en contact
+font-family: 'Josefin Slab', serif; h4: work hover 
 */
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
 body {
     width: 100vw;
+    height: auto;
     background-color: white;
     color: black;
     text-align: center;
 }
+
 .dark-mode {
-    background-image: url('../images/background.JPG') ;
-    background-color:  #272932;
-    color:white;
-}
-.dark-mode2 { background: #272932; color:white ;
+    background-image: url('../images/background.JPG');
+    background-color: #272932;
+    color: white;
 }
 
-.dark-mode .nav button { left: calc(100% - 25px); background-color: black;
+.dark-mode2 {
+    background: #272932;
+    color: white;
 }
-.dark-mode #toggle  { background: white !important;
+
+.dark-mode .nav button {
+    left: calc(100% - 25px);
+    background-color: black;
 }
-.nav {   
+
+.dark-mode #toggle {
+    background: white !important;
+}
+
+.nav {
     top: 0;
     font-family: 'Work Sans', sans-serif;
     font-size: 15pt;
     font-weight: bolder;
-    list-style-type: none;  
+    list-style-type: none;
 
     position: fixed;
     max-width: 200px;
@@ -47,19 +58,14 @@ body {
     /* background-color: blue; */
 }
 
-
-.nav li { padding: 15px 20px; }
-.sub-nav { font-weight: lighter;}
-
-#toggle {
-    position: relative;
-    padding: 0;
-    width: 55px;
-    height: 25px;
-    border-radius: 50px;
-    background-color: black;
-    margin: 30px auto ;
+.nav li {
+    padding: 15px 20px;
 }
+
+.sub-nav {
+    font-weight: lighter;
+}
+
 .nav button {
     position: absolute;
     left: 5px;
@@ -70,56 +76,60 @@ body {
     transition: left .5s ease;
     background-color: white;
 }
+
+#toggle {
+    position: relative;
+    padding: 0;
+    width: 55px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: black;
+    margin: 30px auto;
+}
+
 .name {
     font-family: 'Figtree', sans-serif;
     font-size: 20pt;
-    font-weight: bold;
 
     position: absolute;
     right: 10vw;
     top: 30px;
-
 }
 
 p {
     font-family: 'Ysabeau', sans-serif;
     margin-top: 1em;
     font-size: 15pt;
-    text-align: center;
 }
+
 h1 {
     font-family: 'Roboto Slab', serif;
-    font-size: 20pt;
+    font-size: 25pt;
     margin: 30px;
 }
 
 h2 {
     margin: 0 auto;
-    text-align: center;
     font-family: 'Figtree', sans-serif;
     font-size: 15pt;
 }
 
 h3 {
     font-family: 'Work Sans', sans-serif;
-
 }
 
 h4 {
-    font-family: 'Josefin Slab', serif; 
+    font-family: 'Josefin Slab', serif;
     font-size: 30px;
-    text-align: center;
-   
+
 }
+
 @media all and (max-width: 494px) {
-    h2 {
-        font-size: 12pt;
-    }
     .nav {
         font-size: 12pt;
     }
+
     .name {
         font-size: 15pt;
     }
-
 }

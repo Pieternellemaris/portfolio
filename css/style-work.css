@@ -1,12 +1,8 @@
-body {
-    height: auto;
-    background: white;
-}
 
 .imgs-cont {
     width: calc(90vw - 200px);
     margin: 100px 10vw 0 200px;
-    gap: 20px;  
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,13 +12,12 @@ body {
     position: relative;
 
 }
-.img-vert {
-    max-height: 262px;
-
-}
 .img-hor {
     max-height: 262px;
+}
 
+.img-vert {
+    max-height: 262px;
 }
 
 .hover-box {
@@ -36,72 +31,59 @@ body {
     transition: .5s ease;
     background-color: #2729328e;
 }
+
 .title {
     text-align: center;
-    font-size: 30px;
-    /* background-color: aqua; */
+    font-size: 20pt;
     color: white;
     transition: .5s ease;
-
-margin: 120px auto;
+    margin: 120px auto;
 }
 
-.imgs-cont li:hover .hover-box {
+.imgs-cont li .hover-box:hover {
     opacity: 1;
 }
 
 
 .imgs-cont a:hover .title::before {
-    /* background-color: aqua; */
-    content:"▶︎";
+    content: "▶︎";
 }
 
 
-@media all and (max-width: 800px)   and (min-width: 670px ) {
+@media (pointer: course) {
+    .imgs-cont li .hover-box {
+        opacity: 1; 
+    }
+}
+@media all and (max-width: 800px)  {
 
-.img-hor {
-    max-height: 124px;
-}
-.img-hor .hover-box {
-    height: 124px;
-}
-.img-hor .title {
-    margin-top: 50px ;
-}
-.title {
-    font-size: 15pt;
-}
+    .img-hor {
+        max-height: 124px;
+    }
+
+    .img-hor .hover-box {
+        height: 124px;
+    }
+
+    .img-hor .title {
+        margin-top: 50px;
+    }
+
+    .title {
+        font-size: 15pt;
+    }
 }
 
 /* telefoon */
-
 @media all and (max-width: 670px) {
-.imgs-cont {
-    width: calc(90vw - 150px);
-    margin: 100px 10vw 0 150px;
-}
-.img-hor {
-    max-height: 124px;
-}
-.img-hor .hover-box {
-    height: 124px;
-}
-.img-hor .title {
-    margin-top: 50px ;
-}
-.title {
-    font-size: 15pt;
-}
+    .imgs-cont {
+        width: calc(90vw - 150px);
+        margin: 100px 10vw 0 150px;
+    }
 }
 
 @media all and (max-width: 494px) {
     .imgs-cont {
         justify-content: flex-end;
-    }
-    img {
-        max-height: 124px;
-    }
-  .hover-box {
-        height: 100%;
     }
 }
