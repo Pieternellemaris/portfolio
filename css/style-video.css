@@ -3,6 +3,7 @@ html {
 }
 
 .container {
+  /* background-color: blue; */
   width: calc(90vw - 200px);
   margin: 100px 10vw 0 200px;
   display: flex;
@@ -38,14 +39,19 @@ html {
 .fwd-position {
   right: 5%;
   bottom: 10%;
+} 
+
+.info-position {
+  right: 12%;
+  bottom: 10%;
 }
 
-.play-position {
+/* .play-position {
   top: calc(50% - 50px);
   left: calc(50% - 30px);
-}
+} */
 
-.play {
+/* .play {
   position: absolute;
   border-radius: 0;
   display: block;
@@ -59,20 +65,20 @@ html {
   cursor: pointer;
   border-style: solid;
   border-width: 14px 0 14px 23px;
-}
+} */
 
-.paused {
+/* .paused {
   left: 18px;
 
   border-style: double;
   border-width: 0px 0 0px 23px;
-}
+} */
 
 .player:hover .controls {
   opacity: .5;
 }
 
-.timer {
+/* .timer {
   background-color: aliceblue;
   position: absolute;
   left: 15%;
@@ -105,7 +111,7 @@ html {
   color: aliceblue;
   position: absolute;
   z-index: 3;
-}
+} */
 
 #playlist {
   order: 2;
@@ -128,6 +134,16 @@ html {
   color: white;
 }
 
+#work-info {
+  width: calc(90vw - 250px);
+  height: 400px;
+  margin: 0 10vw 50px 200px;
+  border-radius: 10px;
+  background-color: rgba(167, 184, 142, 0.703);
+  padding: 25px 25px;
+  text-align: left;
+}
+
 .dark-mode .player {
   background-color: #433d69;
 }
@@ -142,11 +158,18 @@ html {
 }
 
 @media all and (max-width: 870px) {
+  .nav {
+    position: absolute;
+  }
   .container {
     margin: 100px 5vw 0 5vw;
 
     width: 90vw;
     align-items: flex-end;
+  }
+  #work-info { 
+    width: calc(90vw - 50px);
+    margin: 50px 5vw 50px 5vw;
   }
   /* .controls {
     opacity: .5;
@@ -161,7 +184,7 @@ html {
     height: 30px;
   }
 
-  .play-position {
+  /* .play-position {
     top: calc(50% - 30px);
     left: calc(50% - 15px);
   }
@@ -171,9 +194,9 @@ html {
     height: 14px;
 
     border-width: 7px 0 7px 12px;
-  }
+  } */
 
-  .paused {
+  /* .paused {
     left: 9px;
 
     border-width: 0px 0 0px 12px;
@@ -188,7 +211,7 @@ html {
 
   .timer .total {
     left: -35px;
-  }
+  } */
 
   #playlist {
     width: calc(90vw - 150px);
@@ -199,15 +222,14 @@ html {
 }
 
 @media all and (max-width: 670px) {
+
   #playlist button {
     width: 180px;
   }
 }
 
 @media all and (max-width: 494px) {
-  .timer {
-    opacity: 0;
-  }
+
 
   h2 {
     font-size: 12pt;

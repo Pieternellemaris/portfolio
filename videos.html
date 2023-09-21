@@ -8,9 +8,9 @@
     <title>Video's</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;1,400&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Mulish:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Roboto+Slab:wght@300;400;500&family=Work+Sans:wght@300;400;500&family=Ysabeau:ital@0;1&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Figtree:ital,wght@0,300;0,400;0,500;1,400&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Mulish:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Roboto+Slab:wght@300;400;500&family=Work+Sans:wght@300;400;500&family=Ysabeau:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style-video.css">
 </head>
@@ -40,65 +40,94 @@
         <div class="player">
             <div class="main-video-container">
                 <iframe width="100%" height="600px" source
-                    src="https://player.vimeo.com/progressive_redirect/playback/837907002/rendition/720p/file.mp4?loc=external&signature=384d4172c2f8f8c1a463c425fb42b3c488b709e2acb2ecf69805ea5eeeb7ae5a"
+                    src="https://youtube.com/embed/ITXD_7Qnze4?modestbranding=1"
                     class="main-video" type="video/mp4" >
             </iframe>
             </div>
             <div class="controls">
                 <button class=" fwd fwd-position" data-icon="F" aria-label="fast forward"> ⏭</button>
-                <button class="btn play-position">
+                <!-- <div class="btn play-position"> -->
                     <div class="play" data-icon="P" aria-label="play pause toggle"></div>
+                <!-- </div> -->
+                <button class="more-info info-position"> 
+                   <h5><a href="#work-information" > i</a></h5> 
                 </button>
-                <div class="timer">
+                <!-- <div class="timer">
                     <div></div>
                     <span aria-label="timer">00:00</span>
                     <span class="total">/ 00:00</span>
-                </div>
+                </div> -->
             </div>
         </div>
 
         <div class="video-list-container" id="playlist">
             <button
-                data-src="https://player.vimeo.com/progressive_redirect/playback/837907002/rendition/720p/file.mp4?loc=external&signature=384d4172c2f8f8c1a463c425fb42b3c488b709e2acb2ecf69805ea5eeeb7ae5a"
-                class="list active" id="gaming" class="list-video">
-                <h2 class="list-title">Gaming</h2>
+                data-src="https://youtube.com/embed/ITXD_7Qnze4?modestbranding=1"
+                class="list active otherworld list-video">
+                <h2 class="list-title">Otherworld</h2>
             </button>
 
             <button
                 data-src="https://youtube.com/embed/LsbIlwoxmAM?modestbranding=1"
-                class="list" id="my-celestrial-body" class="list-video">
+                class="list my-celestrial-body list-video">
                 <h2 class="list-title">My celestial body</h2>
             </button>
 
             <button
-                data-src="https://player.vimeo.com/progressive_redirect/playback/837907665/rendition/720p/file.mp4?loc=external&signature=8d756eeac58d2c4dc946f5a93cd01ef9eb2d82323edc6bf2f4b9881fc8cb619a"
-                class="list" id="min-video" class="list-video">
+                data-src="https://youtube.com/embed/GaJqYDpebZo?modestbranding=1"
+                class="list min-video list-video">
                 <h2 class="list-title">1 min video</h2>
             </button>
 
             <button
-                data-src="https://player.vimeo.com/progressive_redirect/playback/839456417/rendition/360p/file.mp4?loc=external&signature=c1a97c97bd0e4f951586a176b0ffce6dfe46857a378398ad3c702b8a00791be2"
-                class="list" id="onwaar" class="list-video">
+                data-src="https://youtube.com/embed/FZzKwxiTB1s?modestbranding=1"
+                class="list onwaar list-video">
                 <h2 class="list-title">Deze zin is onwaar</h2>
             </button>
 
-            <button data-src="" class="list" id="i-am-looking" class="list-video">
+            <button data-src="https://youtube.com/embed/HIhLj415HuM?modestbranding=1" 
+            class="list i-am-looking list-video">
                 <h2 class="list-title">I am looking</h2>
             </button>
 
             <button
-                data-src="https://player.vimeo.com/progressive_redirect/playback/839456857/rendition/360p/file.mp4?loc=external&signature=523bb59cf53c129b3eb91dad9b6ef757fe8627e3b09262f77b69ca8326bce472"
-                class="list" id="planeten" class="list-video">
+                data-src="https://youtube.com/embed/l0YOi80QM8o?modestbranding=1"
+                class="list planeten list-video">
                 <h2 class="list-title">3D animatie</h2>
             </button>
 
-            <button data-src="" class="list" id="natuur-en-stad" class="list-video">
-                <h2 class="list-title">Natuur en stad</h2>
+            <button data-src="https://youtube.com/embed/_8HiUe49sMk?modestbranding=1" 
+            class="list this-city list-video">
+                <h2 class="list-title">This city</h2>
             </button>
 
         </div>
-
     </div>
+
+    <div id="work-info">
+        <div class="info otherworld" style="display: block;">
+            <h2>This is the text that appears when you click the button. </h2>
+        </div>
+        <div class="info my-celestrial-body" style="display: none;">
+             <h2> is the text that appears when you click the button 2.</h2>
+        </div>
+        <div class="info min-video" style="display: none;">
+            <h2> This is the text that appears when you click the button 3.</h2>
+        </div>
+        <div class="info onwaar" style="display: none;">
+            <h2> This is the text that appears when you click the button 4.</h2>
+        </div>
+        <div class="info i-am-looking" style="display: none;">
+            <h2> This is the text that appears when you click the button 5.</h2>
+        </div>
+        <div class="info planeten" style="display: none;">
+            <h2> This is the text that appears when you click the button 6.</h2>
+        </div>
+        <div class="info this-city" style="display: none;">
+            <h2> This is the text that appears when you click the button 7.</h2>
+        </div>
+    </div>
+    <div id="work-information"></div>
     <script src="js/script.js"></script>
 </body>
 

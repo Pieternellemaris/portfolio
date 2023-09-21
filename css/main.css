@@ -10,6 +10,7 @@ font-family: 'Ysabeau', sans-serif; p: ondertitel name,
 font-family: 'Work Sans', sans-serif; h3: work titles, nav
 font-family: 'Roboto Slab', serif; h1: about en contact
 font-family: 'Josefin Slab', serif; h4: work hover 
+font-family: 'Croissant One', cursive; h5 video i 
 */
 
 html {
@@ -127,6 +128,9 @@ h4 {
     font-family: 'Josefin Slab', serif;
     font-size: 30px;
 
+}
+h5 {
+    font-family: 'Croissant One', cursive;
 }
 
 @media all and (max-width: 494px) {
