@@ -27,13 +27,24 @@ function changeColor() {
     }
 }
 
+const nav = document.querySelectorAll(".nav a");
+console.log(nav);
+for (var i = 0; i < nav.length; i++) {
+nav[i].addEventListener("click", function(event){
+    for (var i = 0; i < nav.length; i++) {
+        nav[i].classList.remove('active');
+      }
+    this.classList.add('active');
+})
+}
+
 
 // code gebaseerd op instructies van mozilla: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs#implementing_the_javascript 
 
 
 const play = document.querySelector('.play');
 const playButton = document.querySelector('.btn');
-const media = document.querySelector("video");
+const media = document.querySelector("iframe");
 const controls = document.querySelector(".controls");
 const fwd = document.querySelector(".fwd");
 const timerWrapper = document.querySelector(".timer");

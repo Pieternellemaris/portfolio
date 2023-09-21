@@ -10,10 +10,9 @@
 
 .imgs-cont li {
     position: relative;
-
 }
 .img-hor {
-    max-height: 262px;
+   height: 262px;
 }
 
 .img-vert {

@@ -18,21 +18,20 @@
 <body>
 
     <ul class="nav">
-
         <li id="toggle">
             <button onclick="myFunction(),myFunction2()">
                 <div class="figure"></div>
             </button>
         </li>
-        <li><a href="index.html"> Home</a></li>
-        <li><a href="work.html"> Work </a>
-            <ul class="sub-nav">
-                <li> <a href="videos.html">Video's</a></li>
-                <li><a target="_blank" href="https://www.pieternellemaris.com/"> Archive</a></li>
-            </ul>
-        </li>
-        <li><a href="index.html#about"> About</a></li>
-        <li><a href="index.html#contact"> Contact</a></li>
+        <li><a id="home"  href="index.html"> Home</a></li>
+        <li><a id="work" href="work.html"> Work
+                <ul class="sub-nav">
+                    <li> <a class="active" id="videos" href="videos.html">Video's</a></li>
+                    <li><a id="archive" target="_blank" href="https://www.pieternellemaris.com/"> Archive</a></li>
+                </ul>
+            </a></li>
+            <li><a  href="index.html#about"> About</a></li>
+            <li><a  href="index.html#contact"> Contact</a></li>
     </ul>
 
     <div class="name">Pieternelle Maris</div>
@@ -40,10 +39,10 @@
     <div class="container">
         <div class="player">
             <div class="main-video-container">
-                <video source
+                <iframe width="100%" height="600px" source
                     src="https://player.vimeo.com/progressive_redirect/playback/837907002/rendition/720p/file.mp4?loc=external&signature=384d4172c2f8f8c1a463c425fb42b3c488b709e2acb2ecf69805ea5eeeb7ae5a"
-                    class="main-video" type="video/mp4" width="100%">
-                </video>
+                    class="main-video" type="video/mp4" >
+            </iframe>
             </div>
             <div class="controls">
                 <button class=" fwd fwd-position" data-icon="F" aria-label="fast forward"> ⏭</button>
@@ -66,7 +65,7 @@
             </button>
 
             <button
-                data-src="https://player.vimeo.com/progressive_redirect/playback/837906030/rendition/540p/file.mp4?loc=external&signature=f3836bd52be14915f53fb527dba61e335ceef6de97e748265504b7fe3d756abe"
+                data-src="https://youtube.com/embed/LsbIlwoxmAM?modestbranding=1"
                 class="list" id="my-celestrial-body" class="list-video">
                 <h2 class="list-title">My celestial body</h2>
             </button>
@@ -83,19 +82,19 @@
                 <h2 class="list-title">Deze zin is onwaar</h2>
             </button>
 
-            <!-- <button data-src="" class="list" id="i-am-looking" class="list-video">
+            <button data-src="" class="list" id="i-am-looking" class="list-video">
                 <h2 class="list-title">I am looking</h2>
-            </button> -->
+            </button>
 
             <button
                 data-src="https://player.vimeo.com/progressive_redirect/playback/839456857/rendition/360p/file.mp4?loc=external&signature=523bb59cf53c129b3eb91dad9b6ef757fe8627e3b09262f77b69ca8326bce472"
                 class="list" id="planeten" class="list-video">
                 <h2 class="list-title">3D animatie</h2>
             </button>
-<!-- 
+
             <button data-src="" class="list" id="natuur-en-stad" class="list-video">
                 <h2 class="list-title">Natuur en stad</h2>
-            </button> -->
+            </button>
 
         </div>
 

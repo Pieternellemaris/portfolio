@@ -61,6 +61,11 @@ body {
 .nav li {
     padding: 15px 20px;
 }
+a.active {
+text-decoration: underline;
+text-decoration-thickness: 1.5px; 
+text-underline-offset: 2px; 
+}
 
 .sub-nav {
     font-weight: lighter;
