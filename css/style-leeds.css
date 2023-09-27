@@ -18,6 +18,29 @@ body {
     text-align: center;
     position: absolute;
   }
+h9 {font-family: 'Slackside One', cursive;
+    font-size: 35pt;
+    position: relative;}
+h9:before {
+        content: "";
+        display: block;
+        width: 20vw;
+        height: 5px;
+        background: #b3b3ee;
+        left:15vw;
+        top: 50%;
+        position: absolute;
+      }
+h9:after {
+        content: "";
+        display: block;
+        width: 20vw;
+        height: 5px;
+        background: #b3b3ee;
+        right: 15vw;
+        top: 50%;
+        position: absolute;
+      }
 #grid-leeds {
     display: grid;
     overflow: hidden;
@@ -27,17 +50,22 @@ body {
 }
 
 h1 {
-
     margin: 20px 0 0 0 ;
     grid-area: 1 / 4 / 2 / 15;
+    padding-top: 50px;
 }
 h2 {
-
     grid-area: 3 / 4 / 6 / 12;
 }
-#video-page {
+.page-video {
     grid-area: 3 / 13 / 3 / 20 ;
 }
+img.video-page {
+    width: 500px;
+
+}
+
+
 
 .portfolio-item {
     border-radius: 20px;
@@ -79,6 +107,17 @@ h3 {
 .title {
     text-align: center;
 }
+.note {
+    z-index: 3;
+    width: 600px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 32pt;
+}
+.ondertitel {
+    width: 600px;
+    font-size: 15pt;
+    font-family: 'Cutive Mono', monospace;
+}
 .item-1 {
     grid-area: 15 / 1 / 15 / 21;
 }
@@ -117,16 +156,7 @@ background-color: #e8e3de6e;
 
     opacity: 1;
 }
-.note {
-    width: 600px;
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 32pt;
-}
-.ondertitel {
-    width: 600px;
-    font-size: 15pt;
-    font-family: 'Cutive Mono', monospace;
-}
+
 
 .text-1 {
 
@@ -135,7 +165,7 @@ background-color: #e8e3de6e;
 .text-2 {
     width: 370px;
     grid-area: 38 / 2  ;
-    z-index: 3;
+
 }
 #vierkant {
     width: 250px;
@@ -282,6 +312,7 @@ background-color: #e8e3de6e;
 }
 
 .text-11 {
+    width: 800px;
     grid-area: 116 / 4  ;}
 
 
@@ -294,5 +325,62 @@ iframe {
     grid-area: 121 / 5/ 137/ 21 ;
     width: 500px;
     height: 800px;
-    zoom: -50%;
+}
+
+
+@media all and (max-width: 1480px)  {
+    .portfolio-item {
+    width: 250px;
+    height: 350px;
+    }
+    h1 {
+        grid-area: 1 / 5 / 2 / 15;
+    }
+    h2 {
+        grid-area: 3 / 5 / 6 / 12;
+    }
+    img.video-page {
+        width: 380px;
+    
+    }.note {
+        width: 400px;
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 27pt;
+    }
+    .text-12 {
+        grid-area: 19 / 12 ;
+    }
+    #green-planets {
+    grid-area: 26 / 13 / 26 / 21;
+    }
+    .text-13 {
+        grid-area: 45 / 2; 
+    }
+    .text-14 {        
+        width: 200px;
+        grid-area: 50 / 16; }
+    .text-7{
+            width: 500px;
+            grid-area: 61 / 10 ;
+        }
+    #dinner-1 {
+    width: 510px; 
+    grid-area: 66 / 1 ;}
+    #dinner-4 {
+        grid-area: 65 / 19 ;
+
+    }
+    .text-5 {
+        width: 200px;
+        grid-area: 82 / 11 ; 
+    }
+    .sub-2 {
+        grid-area: 89 / 15 ;  
+    }
+    .text-8 {
+        grid-area: 107 / 2  ;}
+        iframe {
+            grid-area: 121 / 1/ 137/ 21 ;
+
+        }
 }

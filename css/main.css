@@ -17,6 +17,7 @@ font-family: 'Slackside One', cursive; h9 titles portfolio items
 font-family: 'Cutive Mono', monospace;
 */
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -122,29 +123,7 @@ h4 {font-family: 'Josefin Slab', serif;
 h5 {font-family: 'Croissant One', cursive;}
 h6 {font-family: 'Homemade Apple', cursive; }
 h8 {font-family: 'Reenie Beanie', cursive; }
-h9 {font-family: 'Slackside One', cursive;
-font-size: 35pt;
-position: relative;}
-h9:before {
-    content: "";
-    display: block;
-    width: 300px;
-    height: 5px;
-    background: #b3b3ee;
-    left: 300px;
-    top: 50%;
-    position: absolute;
-  }
-  h9:after {
-    content: "";
-    display: block;
-    width: 300px;
-    height: 5px;
-    background: #b3b3ee;
-    right:300px;
-    top: 50%;
-    position: absolute;
-  }
+
 
 
 @media all and (max-width: 494px) {
