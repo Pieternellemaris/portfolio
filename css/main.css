@@ -11,6 +11,10 @@ font-family: 'Work Sans', sans-serif; h3: work titles, nav
 font-family: 'Roboto Slab', serif; h1: about en contact
 font-family: 'Josefin Slab', serif; h4: work hover 
 font-family: 'Croissant One', cursive; h5 video i 
+font-family: 'Homemade Apple', cursive; h6
+font-family: 'Reenie Beanie', cursive; h8 notes
+font-family: 'Slackside One', cursive; h9 titles portfolio items 
+font-family: 'Cutive Mono', monospace;
 */
 
 html {
@@ -51,6 +55,7 @@ body {
     font-size: 15pt;
     font-weight: bolder;
     list-style-type: none;
+    /* text-align: left; */
 
     position: fixed;
     max-width: 200px;
@@ -102,36 +107,45 @@ text-underline-offset: 2px;
     top: 30px;
 }
 
-p {
-    font-family: 'Ysabeau', sans-serif;
+p {font-family: 'Ysabeau', sans-serif;
     margin-top: 1em;
-    font-size: 15pt;
-}
-
-h1 {
-    font-family: 'Roboto Slab', serif;
+    font-size: 15pt;}
+h1 {font-family: 'Roboto Slab', serif;
     font-size: 25pt;
-    margin: 30px;
-}
-
-h2 {
+    margin: 30px;}
+h2 { font-family: 'Figtree', sans-serif;
     margin: 0 auto;
-    font-family: 'Figtree', sans-serif;
-    font-size: 15pt;
-}
+    font-size: 15pt;}
+h3 {font-family: 'Work Sans', sans-serif;}
+h4 {font-family: 'Josefin Slab', serif;
+    font-size: 30px;}
+h5 {font-family: 'Croissant One', cursive;}
+h6 {font-family: 'Homemade Apple', cursive; }
+h8 {font-family: 'Reenie Beanie', cursive; }
+h9 {font-family: 'Slackside One', cursive;
+font-size: 35pt;
+position: relative;}
+h9:before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 5px;
+    background: #b3b3ee;
+    left: 300px;
+    top: 50%;
+    position: absolute;
+  }
+  h9:after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 5px;
+    background: #b3b3ee;
+    right:300px;
+    top: 50%;
+    position: absolute;
+  }
 
-h3 {
-    font-family: 'Work Sans', sans-serif;
-}
-
-h4 {
-    font-family: 'Josefin Slab', serif;
-    font-size: 30px;
-
-}
-h5 {
-    font-family: 'Croissant One', cursive;
-}
 
 @media all and (max-width: 494px) {
     .nav {

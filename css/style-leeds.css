@@ -1,0 +1,298 @@
+body {
+    background: url('../images/background.png');
+    background-color: #e8e3de;
+    background-attachment: fixed;
+    height: fit-content;
+    text-align: left;
+    width: 100vw;
+}
+
+.dark-mode2 {
+    background: url('../images/background.png');
+    background-attachment: fixed;
+    height: fit-content;
+    background-color: #17161d;
+    color: white;
+}
+.nav {
+    text-align: center;
+    position: absolute;
+  }
+#grid-leeds {
+    display: grid;
+    overflow: hidden;
+    margin-top: 100px;
+    grid-template-columns: repeat(20, calc(100vw / 20));
+    grid-template-rows: repeat(200, 80px);
+}
+
+h1 {
+
+    margin: 20px 0 0 0 ;
+    grid-area: 1 / 4 / 2 / 15;
+}
+h2 {
+
+    grid-area: 3 / 4 / 6 / 12;
+}
+#video-page {
+    grid-area: 3 / 13 / 3 / 20 ;
+}
+
+.portfolio-item {
+    border-radius: 20px;
+width: 300px;
+height: 350px;
+}
+
+.portfolio-item h2 {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.photo {
+    background: url('../images/photo-klein.JPG');
+    background-size: cover;
+    grid-area: 9 / 4 / 13 / 8;
+}
+
+.rem {
+    background-color: lightslategray;
+    /* background: url('../images/reminiscence2.png');
+    background-size: cover; */
+    grid-area: 9 / 9 / 13 / 13;
+}
+
+.story {
+    background-color: rosybrown;
+    /* background: url('../images/reisverhaal2.png');
+    background-size: cover; */
+    grid-area: 9 / 14 / 13 / 18;
+}
+.title {
+    text-align: center;
+}
+.item-1 {
+    grid-area: 15 / 1 / 15 / 21;
+}
+.text-12 {
+    grid-area: 19 / 10 ;
+}
+#mist {
+width: 464px; 
+grid-area: 17 / 2  ;
+}
+
+#green-planets {
+    justify-self: end;
+    align-self: end;
+    width: 464px; 
+grid-area: 20 / 13 / 26 / 21;
+}
+#expo {
+    width: 696px; 
+
+    grid-area: 32 / 5  ;
+}
+#hover-box {
+    font-family: 'Figtree', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 220px;
+    width: 696px; 
+    height: 300px;
+    grid-area: 32 / 5  ;
+background-color: #e8e3de6e;
+    z-index: 2;
+    opacity: 0;
+}
+#hover-box:hover {
+
+    opacity: 1;
+}
+.note {
+    width: 600px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 32pt;
+}
+.ondertitel {
+    width: 600px;
+    font-size: 15pt;
+    font-family: 'Cutive Mono', monospace;
+}
+
+.text-1 {
+
+    grid-area: 29 / 12  ;
+}
+.text-2 {
+    width: 370px;
+    grid-area: 38 / 2  ;
+    z-index: 3;
+}
+#vierkant {
+    width: 250px;
+    grid-area: 30 / 15  ;
+    z-index: 1;
+}
+#fullpage {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 2400px;
+    width: 100vw;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: white;
+  }
+
+#woods {
+    grid-area: 48 / 1  ;
+    width: 696px; 
+}
+#house {
+    justify-self: end;
+    width: 510px; 
+    grid-area: 42 / 15 / 46 / 20;
+}
+.text-13 {
+    grid-area: 45 / 8; 
+}
+.text-14 {
+    grid-area: 52 / 11; 
+}
+.text-7{
+    width: 400px;
+    grid-area: 59 / 8 ;
+}
+#dinner-1 {
+    width: 510px; 
+    grid-area: 66 / 4 ;
+}
+
+#dinner-2 {
+    width: 310px; 
+    grid-area: 58 / 3  ;
+}
+
+#dinner-3 {
+    width: 546px; 
+    justify-self: end;
+    grid-area: 56 / 15 / 56 / 21;
+}
+
+#dinner-4 {
+    width: 464px; 
+    justify-self: end;
+    grid-area: 64 / 19 ;
+}
+
+.item-2 {
+
+    grid-area: 75 / 1 / 75 / 21;
+}
+#bosco {
+    width: 464px; 
+    grid-area: 80 / 1 ;
+}
+.text-3{
+    grid-area: 78 / 5 ;
+}
+.text-4 {
+    grid-area: 80 / 8 ;
+}
+
+.sub-1 {
+    grid-area: 88 / 2 ; 
+}
+.sub-2 {
+    text-align: end;
+    width: 280px;
+    align-self: center;
+    grid-area: 89 / 17 ;  
+}
+.text-5 {
+    width: 400px;
+    grid-area: 83 / 9 ; 
+}
+.arrow-1 {
+    width: 150px;
+    grid-area: 87 / 7 ;   
+    transform: scaleY(-1);
+}
+#dystopian {
+    width: 200px; 
+    grid-area: 77 / 13 ;
+}
+#matera {
+    width: 310px; 
+    justify-self: end;
+    grid-area: 84 / 1 / 84 / 21;
+}
+.text-6 {
+    width: 800px;
+    grid-area: 89 / 5 ; 
+}
+#car-1{
+    width: 464px; 
+    justify-self: end;
+    grid-area: 95 / 15/ 95/ 20  ;
+}
+#car-2{
+    width: 250px; 
+    grid-area: 91 / 5  ;
+}
+#car-air{
+    width: 464px; 
+    grid-area: 106 / 10 ;
+}
+.text-9 {
+    grid-area: 97 / 3 ;
+}
+.text-10 {
+    grid-area: 99 / 5 ;
+}
+#rail {
+    width: 310px; 
+    grid-area: 101 / 3  ;
+}
+.arrow-2 {
+    width: 150px;
+    grid-area: 105 / 7 ;   
+    transform: scaleY(-1);
+}
+.text-8 {
+    text-align: end;
+    width: 400px;
+    grid-area: 107 / 3  ;}
+
+#myko {
+    width: 464px; 
+    justify-self: end;
+    grid-area: 117 / 10/ 117/ 21 ;
+}
+
+.text-11 {
+    grid-area: 116 / 4  ;}
+
+
+.item-3 {
+
+    grid-area: 134 / 1/ 134/ 21 ;
+}
+
+iframe {
+    grid-area: 121 / 5/ 137/ 21 ;
+    width: 500px;
+    height: 800px;
+    zoom: -50%;
+}
