@@ -30,7 +30,7 @@ body {
     width: 100vw;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-    background-color: rgb(167, 184, 142);
+    background-color: #a7b88e;
 }
 
 .bio {

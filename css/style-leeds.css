@@ -7,6 +7,25 @@ body {
     width: 100vw;
 }
 
+  .path {
+    fill: none;
+    stroke: #a7b88e;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+    stroke-dasharray: 12045;
+    stroke-dashoffset: 12045;
+  }
+
+
+
+#lijn {
+    /* background-color: #b3b3ee; */
+    position: absolute;
+    top: -100px;
+    width: 1300px;
+    z-index: -1;
+
+}
 .dark-mode2 {
     background: url('../images/background.png');
     background-attachment: fixed;
@@ -46,25 +65,47 @@ h9:after {
     overflow: hidden;
     margin-top: 100px;
     grid-template-columns: repeat(20, calc(100vw / 20));
-    grid-template-rows: repeat(200, 80px);
+    grid-template-rows: repeat(153, 80px);
 }
 
 h1 {
     margin: 20px 0 0 0 ;
     grid-area: 1 / 4 / 2 / 15;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 h2 {
     grid-area: 3 / 4 / 6 / 12;
 }
-.page-video {
+.transition-1 {
+position: fixed;
+left: 60vw;
+top: 260px;
+z-index: 101;
+width: 500px;
+height: 310px;
+background: url('../images/video-page.png');
+background-size: contain;
+opacity: 0;
+pointer-events: none;
+transition: .5s ease-in;
+}
+
+.transition-1.is-active {
+    position: fixed;
+    top: 100px;
+    left: 200px;
+    right: 100px;
+    width: 80vw;
+    height: 100vh;
+    opacity: 1;
+    pointer-events: all;
+}
+.video-page {
+    width: 500px;
+}
+#link-page {
     grid-area: 3 / 13 / 3 / 20 ;
 }
-img.video-page {
-    width: 500px;
-
-}
-
 
 
 .portfolio-item {
@@ -83,6 +124,14 @@ h3 {
     font-size: 20pt;
     text-align: center;
     margin-top: 30px;
+}
+.dummy {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.dummy.show {
+    opacity: 1;
 }
 
 .photo {
@@ -189,6 +238,9 @@ background-color: #e8e3de6e;
     grid-area: 48 / 1  ;
     width: 696px; 
 }
+#sketch-1 {
+    grid-area: 48 / 13 ;
+}
 #house {
     justify-self: end;
     width: 510px; 
@@ -202,6 +254,7 @@ background-color: #e8e3de6e;
 }
 .text-7{
     width: 400px;
+    height: 500px;
     grid-area: 59 / 8 ;
 }
 #dinner-1 {
@@ -313,6 +366,7 @@ background-color: #e8e3de6e;
 
 .text-11 {
     width: 800px;
+    height: 150px;
     grid-area: 116 / 4  ;}
 
 
@@ -321,13 +375,55 @@ background-color: #e8e3de6e;
     grid-area: 134 / 1/ 134/ 21 ;
 }
 
+#sketch-3 {
+    grid-area: 126 /13  ;
+    width: 200px;
+}
+
 iframe {
     grid-area: 121 / 5/ 137/ 21 ;
     width: 500px;
     height: 800px;
 }
+.mySlides{
+    position: absolute;
+    left: 100px;
+    width: 600px;
+}
+.display-container {
+    position: relative;
+    grid-area: 136 / 6 ; 
+    width: 800px;
+    height: 850px;
 
+}
+.display-container button {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #a7b88e;
+    border: none;
+    border-radius: 50%;
 
+}
+.display-left {
+
+    left: 0;
+}
+.display-right {
+
+    right: 0;
+
+}
+/* #page-2 {
+    width: 80vw;
+    grid-area: 121 / 1; 
+}
+#page-3 {
+    width: 80vw;
+    grid-area: 121 / 1  ; 
+} */
 @media all and (max-width: 1480px)  {
     .portfolio-item {
     width: 250px;
