@@ -39,11 +39,4 @@ nav[i].addEventListener("click", function(event){
 }
 
 
-const img = document.getElementById('hover-box');
-const fullPage = document.querySelector('#fullpage');
-img.addEventListener('click', function() {
-
-  fullPage.style.backgroundImage = 'url(../images/leeds/fullscreen-expo2.jpg)';
-  fullPage.style.display = 'block';
-});
 

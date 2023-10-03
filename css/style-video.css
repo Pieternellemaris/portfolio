@@ -149,6 +149,14 @@ html {
   width: 300px;
   height: 455px;
 margin: 0;
+padding-top: 20px;
+}
+
+#naast-onwaar {
+  width: 600px;
+  height: 445px;
+  margin:  0;
+  padding-top: 20px;
 }
 
 .myStoryboard{
@@ -203,7 +211,7 @@ position: relative;
     align-items: flex-end;
   }
   #work-info { 
-    width: calc(90vw - 50px);
+    width: calc(90vw - 100px);
     margin: 50px 5vw 50px 5vw;
   }
   /* .controls {

@@ -1,6 +1,6 @@
 body {
     background: url('../images/leeds/background.png');
-    background-color: #272932;
+    background-color: #17161d;
     background-attachment: fixed;
     height: fit-content;
     text-align: left;
@@ -70,12 +70,14 @@ h9:after {
 }
 
 h1 {
+    text-align: left;
     margin: 20px 0 0 0 ;
-    grid-area: 1 / 4 / 2 / 15;
+    grid-area: 1 / 5 / 2 / 15;
     padding-top: 40px;
 }
-h2 {
-    grid-area: 3 / 4 / 6 / 12;
+.begin-text{
+    margin: 20px 0 0 0 ;
+    grid-area: 3 / 5 / 6 / 12;
 }
 .transition-1 {
 position: fixed;
@@ -310,13 +312,13 @@ background-color: #e8e3de6e;
     grid-area: 83 / 9 ; 
 }
 .arrow-1 {
-    width: 150px;
+    width: 100px;
     grid-area: 87 / 7 ;   
-    transform: scaleY(-1);
+    transform: scaleX(-1);
 }
 #dystopian {
     width: 200px; 
-    grid-area: 77 / 13 ;
+    grid-area: 77 / 14 ;
 }
 #matera {
     width: 310px; 
@@ -351,9 +353,9 @@ background-color: #e8e3de6e;
     grid-area: 101 / 3  ;
 }
 .arrow-2 {
-    width: 150px;
+    width: 100px;
     grid-area: 105 / 7 ;   
-    transform: scaleY(-1);
+    transform: scaleX(-1);
 }
 .text-8 {
     text-align: end;
@@ -430,16 +432,34 @@ iframe {
     width: 300px;
     grid-area: 146 / 3 ; 
 }
+
+.eind-text { 
+    font-size: 30pt;
+    padding: 0 200px 0 200px;
+    font-family: 'Cutive Mono', monospace;   
+    grid-area: 157 / 1 ; 
+    /* background-color: aquamarine; */
+    width: calc(100vw - 400px);
+}
+
+
+button.back-up {
+    font-family: 'Josefin Slab', serif;
+    font-size: 15pt;
+    grid-area: 161 / 3 ; 
+    background-color: #b3b3ee;
+    border-radius: 50%;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+
+
 @media all and (max-width: 1480px)  {
     .portfolio-item {
     width: 250px;
     height: 350px;
-    }
-    h1 {
-        grid-area: 1 / 5 / 2 / 15;
-    }
-    h2 {
-        grid-area: 3 / 5 / 6 / 12;
     }
     img.video-page {
         width: 380px;

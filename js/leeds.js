@@ -1,3 +1,13 @@
+
+const img = document.getElementById('hover-box');
+const fullPage = document.querySelector('#fullpage');
+img.addEventListener('click', function() {
+
+  fullPage.style.backgroundImage = 'url(../images/leeds/fullscreen-expo2.jpg)';
+  fullPage.style.display = 'block';
+});
+
+
 const objects = document.querySelectorAll('.dummy');
 
 const observer = new IntersectionObserver(entries => {
@@ -25,7 +35,7 @@ window.addEventListener("scroll",function(){
     path.style.strokeDashoffset = length - offset - 200;
     // console.log(path.style.strokeDashoffset);
     if (    path.style.strokeDashoffset < 1400) {
-      path.style.strokeDashoffset = length - offset - 800;
+      path.style.strokeDashoffset = length - offset - 750;
     }
 });
 
@@ -63,4 +73,9 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
+}
+
+function backUp() {
+  console.log('hi');
+  document.documentElement.scrollTop = 0;
 }

@@ -15,25 +15,36 @@ for (let i = 0; i < buttons.length; i++) {
   let btn = buttons[i];
 
   if (window.location.hash) {
-  let btnId = document.querySelector(`${window.location.hash}`);
+  let workId = window.location.hash;
+  let btnId = document.querySelector(`${workId}`);
 
   let gaming = document.querySelector('.video-list-container .active')
   gaming.classList.remove('active');
-
   btnId.classList.add('active');
 
   let vidId = btnId.dataset.src;
+  let vidClass = btnId.classList[1]
   document.querySelector('.main-video-container .main-video').src = vidId;
-  // document.querySelector('.main-video-container .main-video').play();
-  // play.classList.add('paused'); 
+
+  var work = document.getElementById('work-info').querySelector( `.${vidClass}`);
+   console.log(work);
+   for (let i = 0; i < buttons.length; i++) {
+    let oldInfo = document.querySelectorAll('.info');
+    oldInfo[i].style.display= "none";
+    work.style.display= "block";}
   }
 
+
+
+  // document.querySelector('.main-video-container .main-video').play();
+  // play.classList.add('paused'); 
   if (btn.classList.contains('active')) {
     currentSrc=i;
 } 
 
-
+//buttons on page//
   btn.onclick = function () {
+
     history.pushState("", "", `${location.pathname}${location.search}`); //https://www.webmound.com/remove-url-hash-using-javascript/
     for (let j = 0; j < buttons.length; j++) {
       buttons[j].classList.remove('active');
@@ -46,6 +57,8 @@ for (let i = 0; i < buttons.length; i++) {
     // play.classList.add('paused');
   }
 }
+
+
 const fwd = document.querySelector(".fwd");
 fwd.addEventListener("click", mediaForward);
 
@@ -68,16 +81,24 @@ function toggleText() {
     var text = document.getElementById('work-info').getElementsByClassName(`${name}`)[0];
     var work = document.getElementById('work-info').querySelectorAll('.info');
     
-      if (text.style.display === "none") {
+
+      for (let i = 0; i < work.length; i++) {
+         work[i].style.display= "none";}
+    text.style.display = "block";
+
+    }
+
+      // if (text.style.display === "none") {
     
-        for (let i = 0; i < work.length; i++) {
-        work[i].style.display= "none";}
+      //   for (let i = 0; i < work.length; i++) {
+      //   work[i].style.display= "none";}
     
-        text.style.display = "block";
-      } else {
-        for (let i = 0; i < work.length; i++) {
-        work[i].style.display= 'none';}
-      }}
+
+      // } else {
+      //   for (let i = 0; i < work.length; i++) {
+      //   work[i].style.display= 'none';}
+      // }
+    
     
 var btnLinks = document.querySelectorAll('.video-list-container button');
 btnLinks.forEach(function(btn){
