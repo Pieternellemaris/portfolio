@@ -28,7 +28,7 @@ function changeColor() {
 }
 
 const nav = document.querySelectorAll(".nav a");
-console.log(nav);
+// console.log(nav);
 for (var i = 0; i < nav.length; i++) {
 nav[i].addEventListener("click", function(event){
     for (var i = 0; i < nav.length; i++) {
@@ -43,7 +43,7 @@ const img = document.getElementById('hover-box');
 const fullPage = document.querySelector('#fullpage');
 img.addEventListener('click', function() {
 
-  fullPage.style.backgroundImage = 'url(../images/fullscreen-expo2.jpg)';
+  fullPage.style.backgroundImage = 'url(../images/leeds/fullscreen-expo2.jpg)';
   fullPage.style.display = 'block';
 });
 

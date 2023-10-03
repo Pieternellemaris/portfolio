@@ -135,14 +135,49 @@ html {
 }
 
 #work-info {
-  width: calc(90vw - 250px);
-  height: 400px;
+  width: calc(90vw - 300px);
+  height: fit-content;
   margin: 0 10vw 50px 200px;
   border-radius: 10px;
   background-color: rgba(167, 184, 142, 0.703);
-  padding: 25px 25px;
+  padding: 25px 50px;
   text-align: left;
+  position: relative;
 }
+
+#naast-img {
+  width: 300px;
+  height: 455px;
+margin: 0;
+}
+
+.myStoryboard{
+  width: 300px;
+  margin: 0 calc(50% - 150px);
+
+}
+.display-container {
+  float: right;
+position: relative;
+  width: 350px;
+}
+.display-container button {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ecccd3;
+  border: none;
+  border-radius: 50%;
+
+}
+.display-left {
+  left: 0;
+}
+.display-right {
+  right: 0;
+}
+
 
 .dark-mode .player {
   background-color: #433d69;

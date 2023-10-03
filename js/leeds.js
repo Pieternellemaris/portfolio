@@ -18,12 +18,15 @@ objects.forEach(object => {
 
 var path = document.querySelector('.path');
 var length = path.getTotalLength();
-console.log(length);
+// console.log(length);
 
 window.addEventListener("scroll",function(){
     var offset = this.window.scrollY;
     path.style.strokeDashoffset = length - offset - 200;
-    console.log(path.style.strokeDashoffset);
+    // console.log(path.style.strokeDashoffset);
+    if (    path.style.strokeDashoffset < 1400) {
+      path.style.strokeDashoffset = length - offset - 800;
+    }
 });
 
     window.onload = () => {
@@ -33,7 +36,7 @@ window.addEventListener("scroll",function(){
           newPage.addEventListener('click', event => {
             event.preventDefault();
             let target = newPage.getAttribute('href');
-            console.log(target);
+            // console.log(target);
     
             transition_el.classList.add('is-active');
       

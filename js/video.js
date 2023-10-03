@@ -64,7 +64,7 @@ function mediaForward() {
 }
 function toggleText() {
     var name = this.classList[1];
-    console.log(name);
+    // console.log(name);
     var text = document.getElementById('work-info').getElementsByClassName(`${name}`)[0];
     var work = document.getElementById('work-info').querySelectorAll('.info');
     
@@ -79,11 +79,29 @@ function toggleText() {
         work[i].style.display= 'none';}
       }}
     
-    var btnLinks = document.querySelectorAll('.video-list-container button');
-    btnLinks.forEach(function(btn){
+var btnLinks = document.querySelectorAll('.video-list-container button');
+btnLinks.forEach(function(btn){
        btn.addEventListener('click', toggleText);
-    });
+});
 
+
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("myStoryboard");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 // verwijderde video player //
 
 // const playButton = document.querySelector('.btn');

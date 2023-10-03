@@ -65,8 +65,8 @@ body {
     /* background-color: blue; */
 }
 
-.nav li {
-    padding: 15px 20px;
+.nav > li {
+    padding: 15px 2px;
 }
 a.active {
 text-decoration: underline;
@@ -74,8 +74,10 @@ text-decoration-thickness: 1.5px;
 text-underline-offset: 2px; 
 }
 
-.sub-nav {
+.sub-nav li {
     font-weight: lighter;
+    padding: 7px 0px;
+
 }
 
 .nav button {

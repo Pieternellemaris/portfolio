@@ -1,10 +1,11 @@
 body {
-    background: url('../images/background.png');
-    background-color: #e8e3de;
+    background: url('../images/leeds/background.png');
+    background-color: #272932;
     background-attachment: fixed;
     height: fit-content;
     text-align: left;
     width: 100vw;
+    color: white;
 }
 
   .path {
@@ -12,8 +13,8 @@ body {
     stroke: #a7b88e;
     stroke-miterlimit: 10;
     stroke-width: 3px;
-    stroke-dasharray: 12045;
-    stroke-dashoffset: 12045;
+    stroke-dasharray: 13000.75;
+    stroke-dashoffset: 13000.75;
   }
 
 
@@ -27,7 +28,7 @@ body {
 
 }
 .dark-mode2 {
-    background: url('../images/background.png');
+    background: url('../images/leeds/background.png');
     background-attachment: fixed;
     height: fit-content;
     background-color: #17161d;
@@ -65,7 +66,7 @@ h9:after {
     overflow: hidden;
     margin-top: 100px;
     grid-template-columns: repeat(20, calc(100vw / 20));
-    grid-template-rows: repeat(153, 80px);
+    grid-template-rows: repeat(162, 80px);
 }
 
 h1 {
@@ -83,7 +84,7 @@ top: 260px;
 z-index: 101;
 width: 500px;
 height: 310px;
-background: url('../images/video-page.png');
+background: url('../images/leeds/video-page.png');
 background-size: contain;
 opacity: 0;
 pointer-events: none;
@@ -135,7 +136,7 @@ h3 {
 }
 
 .photo {
-    background: url('../images/photo-klein.JPG');
+    background: url('../images/leeds/photo-klein.JPG');
     background-size: cover;
     grid-area: 9 / 4 / 13 / 8;
 }
@@ -228,6 +229,7 @@ background-color: #e8e3de6e;
     top: 2400px;
     width: 100vw;
     height: 800px;
+
     background-size: cover;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
@@ -386,13 +388,13 @@ iframe {
     height: 800px;
 }
 .mySlides{
-    position: absolute;
+    margin: 0 auto;
     left: 100px;
     width: 600px;
 }
 .display-container {
     position: relative;
-    grid-area: 136 / 6 ; 
+    grid-area: 138 / 6 ; 
     width: 800px;
     height: 850px;
 
@@ -416,14 +418,18 @@ iframe {
     right: 0;
 
 }
-/* #page-2 {
-    width: 80vw;
-    grid-area: 121 / 1; 
+.text-15 {
+    width: 500px;
+    grid-area: 136 / 2 ; 
 }
-#page-3 {
-    width: 80vw;
-    grid-area: 121 / 1  ; 
-} */
+.text-16 {
+    width: 300px;
+    grid-area: 139 / 16 ; 
+}
+.text-17 {
+    width: 300px;
+    grid-area: 146 / 3 ; 
+}
 @media all and (max-width: 1480px)  {
     .portfolio-item {
     width: 250px;
