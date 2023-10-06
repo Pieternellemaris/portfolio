@@ -89,10 +89,33 @@
 
 /* modal content  */
 .text-right {
+    font-size: 14pt;
     position: absolute;
-    top: 100px;
+    top: 60px;
     right: 5vw;
+    width: 30vw;
+    height: 60vh;
+    overflow: scroll;
+}
 
+.text-boven {
+    font-size: 13pt;
+    position: absolute;
+    top: 60px;
+    right: 5vw;
+    max-height: 30vh;
+    overflow: scroll;
+    width: 30vw;
+}
+
+.text-under {
+    color:  #272932; 
+    font-size: 13pt;
+    position: absolute;
+    top: 370px;
+    right: 5vw;
+    max-height: 30vh;
+    overflow: scroll;
     width: 30vw;
 }
 
@@ -136,8 +159,14 @@ padding-left: 20px;
 }
 @media all and (max-width: 800px)  {
     .text-right {
+        top: 20px;
+        width: 34vw;
         font-size: 10pt;
-        margin-left: 10vw;
+        margin-left: 5vw;
+
+    }
+    .text-under {
+    top: 360px;
     }
     .display-container {
         max-height: 400px;
@@ -187,6 +216,10 @@ padding-left: 20px;
 
         width: 70vw;
     }
+    .text-under {
+        opacity: 0;
+        top: 80px;
+        }
     .mySlides{ 
         max-width:  60vw;
     max-height: 400px;

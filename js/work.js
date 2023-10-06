@@ -3,6 +3,7 @@
 // Get the button that opens the modal
 const works = document.querySelectorAll(".work-item")
 works.forEach(function(work){
+
     work.addEventListener('click', toggleText);
 });
 
@@ -11,11 +12,13 @@ works.forEach(function(work){
 
 // When the user clicks the button, open the modal 
 function toggleText() {
+
     var name = this.classList[2];
 
     var modal = document.getElementById('work-modal').getElementsByClassName(`${name}`)[0];
+    console.log(modal);
     modal.style.display= "block";
-    // console.log(modal);
+
 
     var span = modal.getElementsByClassName("close")[0];
 
