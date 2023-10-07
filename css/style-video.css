@@ -165,6 +165,7 @@ padding-top: 20px;
 
 }
 .display-container {
+  /* background-color: blue; */
   float: right;
 position: relative;
   width: 350px;
@@ -264,16 +265,35 @@ position: relative;
 
 }
 
-@media all and (max-width: 670px) {
+@media all and (max-width: 770px) {
 
   #playlist button {
     width: 180px;
   }
+
+  .display-container {
+    width: 250px;
+  }
+  .myStoryboard{
+    width: 200px;
+    margin: calc(50% - 100px);
+  }
+  #naast-onwaar {
+    height: 550px;
+    width: 400px;
+}
 }
 
-@media all and (max-width: 494px) {
+@media all and (max-width: 500px) {
 
+  #naast-onwaar {
+    width: 70vw;
+    height: 300px;
+}
+.display-container {
+  float: none;
 
+}
   h2 {
     font-size: 12pt;
   }
