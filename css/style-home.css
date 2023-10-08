@@ -54,7 +54,9 @@ body {
     background-color: #E8DEDE;
 
 }
-
+h2 {
+    padding: 10px;
+}
 .info {
     margin: 0 auto;
     width: 300px;
