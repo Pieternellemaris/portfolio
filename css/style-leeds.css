@@ -39,7 +39,7 @@ body {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  .modal-content {
+.modal-content {
     text-align: center;
     font-size: 25pt;
     color: white;
@@ -50,7 +50,20 @@ body {
     border: 1px solid #888;
     width: 80%;
     height: 50%;
-  }
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+      
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 .dark-mode2 {
     background: url('../images/leeds/background.png');
     background-attachment: fixed;
