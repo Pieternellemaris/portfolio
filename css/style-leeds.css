@@ -27,6 +27,30 @@ body {
     z-index: -1;
 
 }
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal-content {
+    text-align: center;
+    font-size: 25pt;
+    color: white;
+    position: relative;
+    background-color: lightslategrey;
+    margin: 100px auto;
+    padding: 20px 40px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 50%;
+  }
 .dark-mode2 {
     background: url('../images/leeds/background.png');
     background-attachment: fixed;
@@ -505,4 +529,9 @@ button.back-up {
             grid-area: 121 / 1/ 137/ 21 ;
 
         }
+}
+@media all and (max-width: 1380px)  {
+.modal {
+    display: block;
+}
 }
