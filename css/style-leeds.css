@@ -1,6 +1,7 @@
 body {
     background: url('../images/leeds/background.png');
     background-color: #17161d;
+    background-size: cover;
     background-attachment: fixed;
     height: fit-content;
     text-align: left;
